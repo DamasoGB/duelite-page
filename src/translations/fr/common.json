@@ -1,0 +1,10 @@
+{
+  "key": "value",
+  "keyDeep": {
+    "inner": "value"
+  },
+  "game.add": "Ajouter le jeu à la liste de souhaits",
+  "game.paragraph1":"Paragraphe 1 français, Paragraphe 1 français, Paragraphe 1 français, Paragraphe 1 français, Paragraphe 1 français, Paragraphe 1 français, Paragraphe 1 français, Paragraphe 1 français, Paragraphe 1 français, Paragraphe 1 français, Paragraphe 1 français, Paragraphe 1 français, Paragraphe 1 français.",
+  "game.paragraph2":"Paragraphe 2 français, Paragraphe 2 français, Paragraphe 2 français, Paragraphe 2 français, Paragraphe 2 français, Paragraphe 2 français, Paragraphe 2 français, Paragraphe 2 français, Paragraphe 2 français, Paragraphe 2 français, Paragraphe 2 français, Paragraphe 2 français, Paragraphe 2 français."
+
+}

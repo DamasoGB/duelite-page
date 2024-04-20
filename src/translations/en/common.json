@@ -1,0 +1,9 @@
+{
+  "key": "value",
+  "keyDeep": {
+    "inner": "value"
+  },
+  "game.add": "Add the game to the wishlist",
+  "game.paragraph1":"Paragraph 1 English, Paragraph 1 English, Paragraph 1 English, Paragraph 1 English, Paragraph 1 English, Paragraph 1 English, Paragraph 1 English, Paragraph 1 English, Paragraph 1 English, Paragraph 1 English, Paragraph 1 English, Paragraph 1 English, Paragraph 1 English, Paragraph 1 English, Paragraph 1 English.",
+  "game.paragraph2":"Paragraph 2 English, Paragraph 2 English, Paragraph 2 English, Paragraph 2 English, Paragraph 2 English, Paragraph 2 English, Paragraph 2 English, Paragraph 2 English, Paragraph 2 English, Paragraph 2 English, Paragraph 2 English, Paragraph 2 English, Paragraph 2 English, Paragraph 2 English, Paragraph 2 English."
+}

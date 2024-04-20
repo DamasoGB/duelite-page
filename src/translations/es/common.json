@@ -1,0 +1,9 @@
+{
+  "key": "value",
+  "keyDeep": {
+    "inner": "value"
+  },
+  "game.add": "Añade el juego a la lista de deseados",
+  "game.paragraph1":"Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español.",
+  "game.paragraph2":"Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español."
+}
