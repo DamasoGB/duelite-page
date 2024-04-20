@@ -1,0 +1,135 @@
+/* header, logo and nav menu */
+.header{
+    background-color: #651d2b;
+    margin: -0.5rem -0.5rem 1rem -0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+ul {
+    display: flex;
+    flex-direction: row; 
+    list-style-type: none; 
+    padding: 0; 
+}
+li {
+    margin: 0 10px; 
+}
+.logo{
+    width: 150px;
+}
+
+.menu-toggle {
+    display: none; 
+    cursor: pointer;
+}
+.menu-toggle span {
+    display: block;
+    height: 2px;
+    width: 25px;
+    margin-bottom: 5px;
+    position: relative;
+    background: white;
+    transition: all 0.3s ease; 
+}
+
+.menu {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+/* menu opening animation */
+.menu-toggle.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* menu closing animation */
+.menu-toggle.close span:nth-child(1) {
+    transform: translateY(0) rotate(0);
+}
+
+.menu-toggle.close span:nth-child(2) {
+    opacity: 1;
+}
+
+.menu-toggle.close span:nth-child(3) {
+    transform: translateY(0) rotate(0);
+}
+
+.flagIcon{
+    width: 2rem;
+    border-radius: 2px;
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+}
+.gameLogo{
+    width: 28.125rem;
+}
+
+.descContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.gameIcon{
+    margin-right: 3rem;
+    height: 30%;
+}
+.description{
+    width: 60%;
+
+}
+
+.wishlistContainer{
+    display: flex;
+    justify-content: center;
+}
+.wishlistText{
+    text-align: center;
+    display: block;
+}
+.wishlist{
+    width: 15.625rem;
+    border-radius: 7px;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 0.12rem 1rem;
+    }
+    ul {
+        flex-direction: column;
+    }
+    li {
+        margin: 10px 0; 
+    }
+    .menu-toggle {
+        margin-left: 0.2rem;
+        display: block;
+        cursor: pointer;
+    }
+
+    .descContainer{
+        flex-direction: column;
+    }
+
+}
