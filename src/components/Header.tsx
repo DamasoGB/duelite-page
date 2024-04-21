@@ -3,7 +3,7 @@
 
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import logo from '../assets/placeholderTiny.png';
+import logo from '../assets/placeholderTiny.webp';
 import enFlag from '../assets/Flag_of_the_United_Kingdom.svg';
 import esFlag from '../assets/Flag_of_Spain.svg';
 import frFlag from '../assets/Flag_of_France.svg';

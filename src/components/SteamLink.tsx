@@ -2,7 +2,7 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
-import wishlistImg from '../assets/wishlistSteam.png'
+import wishlistImg from '../assets/wishlistSteam.webp'
 
 export function SteamLink({ language }) {
   const { t } = useTranslation("common");

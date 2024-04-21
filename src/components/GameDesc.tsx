@@ -2,8 +2,8 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
-import dueliteLogo from '../assets/placeholder.png'
-import dueliteIcon from '../../public/jhony_coust.png'
+import dueliteLogo from '../assets/placeholder.webp'
+import dueliteIcon from '../../public/jhony_coust.webp'
 
 export function GameDesc({language}){
     const { t } = useTranslation("common");
