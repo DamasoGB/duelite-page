@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import "../styles/Header.css";
 
-export function Header({ setLanguage }) {
+export function Header({ language, setLanguage }) {
   const [showMenu, setShowMenu] = useState<boolean>(true);
 
   const { i18n } = useTranslation("common");
@@ -49,21 +49,21 @@ export function Header({ setLanguage }) {
                 <img
                   alt="Español"
                   src="src/assets/Flag_of_Spain.svg"
-                  className="flagIcon"
+                  className={language === 'es' ? "flagIconChoosed" : "flagIcon" }
                 />
               </li>
               <li onClick={() => handleLanguageChange("en")}>
                 <img
                   alt="English"
                   src="src/assets/Flag_of_the_United_Kingdom.svg"
-                  className="flagIcon"
+                  className={language === 'en' ? "flagIconChoosed" : "flagIcon" }
                 />
               </li>
               <li onClick={() => handleLanguageChange("fr")}>
                 <img
                   alt="Français"
                   src="src/assets/Flag_of_France.svg"
-                  className="flagIcon"
+                  className={language === 'fr' ? "flagIconChoosed" : "flagIcon" }
                 />
               </li>
             </ul>

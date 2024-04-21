@@ -16,7 +16,7 @@ export function App() {
 
   return (
     <>
-      <Header setLanguage={setLanguage} />
+      <Header language={language} setLanguage={setLanguage} />
       <GameDesc language={language} />
       <SteamLink language={language} />
       <ImageSlider images={IMAGES} />
