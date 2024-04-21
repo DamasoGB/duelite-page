@@ -3,6 +3,10 @@
 
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import logo from '../assets/placeholderTiny.png';
+import enFlag from '../assets/Flag_of_the_United_Kingdom.svg';
+import esFlag from '../assets/Flag_of_Spain.svg';
+import frFlag from '../assets/Flag_of_France.svg';
 import "../styles/Header.css";
 
 export function Header({ language, setLanguage }) {
@@ -35,7 +39,7 @@ export function Header({ language, setLanguage }) {
         <img
           alt="Betaking Studios"
           className="logo"
-          src="src/assets/placeholderTiny.png"
+          src={logo}
         />
         <div>
           <div
@@ -51,21 +55,21 @@ export function Header({ language, setLanguage }) {
               <li onClick={() => handleLanguageChange("es")}>
                 <img
                   alt="Español"
-                  src="src/assets/Flag_of_Spain.svg"
+                  src={esFlag}
                   className={language === 'es' ? "flagIconChoosed" : "flagIcon" }
                 />
               </li>
               <li onClick={() => handleLanguageChange("en")}>
                 <img
                   alt="English"
-                  src="src/assets/Flag_of_the_United_Kingdom.svg"
+                  src={enFlag}
                   className={language === 'en' ? "flagIconChoosed" : "flagIcon" }
                 />
               </li>
               <li onClick={() => handleLanguageChange("fr")}>
                 <img
                   alt="Français"
-                  src="src/assets/Flag_of_France.svg"
+                  src={frFlag}
                   className={language === 'fr' ? "flagIconChoosed" : "flagIcon" }
                 />
               </li>

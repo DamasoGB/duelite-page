@@ -1,27 +1,24 @@
 import { useState } from "react"
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react"
+import IMAGES from '../assets/data.ts'
 import "../styles/imageSlider.css"
 
-type ImageSliderProps = {
-  images: {
-    url: string
-    alt: string
-  }[]
-}
 
-export function ImageSlider({ images }: ImageSliderProps) {
+export function ImageSlider() {
   const [imageIndex, setImageIndex] = useState(0)
+
+  
 
   function showNextImage() {
     setImageIndex(index => {
-      if (index === images.length - 1) return 0
+      if (index === IMAGES.length - 1) return 0
       return index + 1
     })
   }
 
   function showPrevImage() {
     setImageIndex(index => {
-      if (index === 0) return images.length - 1
+      if (index === 0) return IMAGES.length - 1
       return index - 1
     })
   }
@@ -43,9 +40,9 @@ export function ImageSlider({ images }: ImageSliderProps) {
           overflow: "hidden",
         }}
       >
-        {images.map(({ url, alt }, index) => (
+        {IMAGES.map(({ url, alt }, index) => (
           <img
-            key={url}
+            key={index}
             src={url}
             alt={alt}
             aria-hidden={imageIndex !== index}
@@ -80,7 +77,7 @@ export function ImageSlider({ images }: ImageSliderProps) {
           gap: ".25rem",
         }}
       >
-        {images.map((_, index) => (
+        {IMAGES.map((_, index) => (
           <button
             key={index}
             className="img-slider-dot-btn"

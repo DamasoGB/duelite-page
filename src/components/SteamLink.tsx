@@ -2,6 +2,7 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
+import wishlistImg from '../assets/wishlistSteam.png'
 
 export function SteamLink({ language }) {
   const { t } = useTranslation("common");
@@ -13,7 +14,7 @@ export function SteamLink({ language }) {
         <a href="https://www.google.es">
           <img
             alt="Wishlist on Steam"
-            src="src/assets/wishlistSteam.png"
+            src={wishlistImg}
             className="wishlist"
           />
         </a>

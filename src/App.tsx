@@ -3,7 +3,6 @@ import { Header } from "./components/Header";
 import { GameDesc } from "./components/GameDesc";
 import { SteamLink } from "./components/SteamLink";
 import { ImageSlider } from "./components/ImageSlider";
-import { IMAGES } from "./assets/data";
 import "./App.css";
 
 interface ILanguage {
@@ -19,7 +18,7 @@ export function App() {
       <Header language={language} setLanguage={setLanguage} />
       <GameDesc language={language} />
       <SteamLink language={language} />
-      <ImageSlider images={IMAGES} />
+      <ImageSlider />
     </>
   );
 }

@@ -2,6 +2,8 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
+import dueliteLogo from '../assets/placeholder.png'
+import dueliteIcon from '../../public/jhony_coust.png'
 
 export function GameDesc({language}){
     const { t } = useTranslation("common");
@@ -9,10 +11,10 @@ export function GameDesc({language}){
     return(
         <>
             <div className="gameContainer">
-                <img alt="Duelite Logo" src="src/assets/placeholder.png" className="gameLogo"/>
+                <img alt="Duelite Logo" src={dueliteLogo} className="gameLogo"/>
             </div>
             <div className="descContainer">
-                <img alt="Icon Duelite" src="public/jhony_coust.png" className="gameIcon"/>
+                <img alt="Icon Duelite" src={dueliteIcon} className="gameIcon"/>
                 <p className="description">
                     {t('game.paragraph1')}
                     <br /><br/>
