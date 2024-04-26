@@ -20,7 +20,7 @@ return(
             {t("game.contact")}
             <li>
                 <Twitter size={20} absoluteStrokeWidth className="lucideIcon"/>
-                <a href="https://twitter.com/duelitegame">@BetakingStudios</a>
+                <a href="https://twitter.com/duelitegame">@DueliteGame</a>
             </li>
             <li>
                 <Mail size={20} absoluteStrokeWidth className="lucideIcon"/>
