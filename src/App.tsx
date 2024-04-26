@@ -3,6 +3,8 @@ import { Header } from "./components/Header";
 import { GameDesc } from "./components/GameDesc";
 import { SteamLink } from "./components/SteamLink";
 import { ImageSlider } from "./components/ImageSlider";
+import { GameInfo } from "./components/GameInfo";
+import { Footer } from "./components/Footer";
 import "./App.css";
 
 interface ILanguage {
@@ -18,7 +20,9 @@ export function App() {
       <Header language={language} setLanguage={setLanguage} />
       <GameDesc language={language} />
       <SteamLink language={language} />
+      <GameInfo language={language} />
       <ImageSlider />
+      <Footer/>
     </>
   );
 }

@@ -11,7 +11,7 @@ export function SteamLink({ language }) {
     <>
       <h2 className="wishlistText">{t("game.add")}:</h2>
       <div className="wishlistContainer">
-        <a href="https://www.google.es">
+        <a href="https://store.steampowered.com">
           <img
             alt="Wishlist on Steam"
             src={wishlistImg}

@@ -3,8 +3,9 @@
     justify-content: center;
 }
 .gameLogo{
-    max-width: 100%;
-    width: 28.125rem;
+    max-width: 60%;
+    height: auto;
+    
 }
 
 .descContainer{
@@ -35,4 +36,21 @@
     width: 15.625rem;
     border-radius: 7px;
     margin-bottom: 2rem;
+}
+.gameInfo{
+    text-align: center;
+    display: block;
+    margin-bottom: 3rem;
+    white-space: pre-wrap;
+}
+
+@media screen and (max-width: 768px) {
+    .gameLogo{
+        max-width: 80%;
+    }
+
+    .gameIcon{
+        max-width: 40%;
+        margin-right: 0;
+    }
 }

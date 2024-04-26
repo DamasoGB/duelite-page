@@ -4,6 +4,10 @@
     "inner": "value"
   },
   "game.add": "Añade el juego a la lista de deseados",
-  "game.paragraph1":"Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español, Parrafo 1 Español.",
-  "game.paragraph2":"Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español, Parrafo 2 Español."
+  "game.paragraph1":"El roguelite de cartas de duelos en el Salvaje Oeste. Duelite es un atractivo juego de cartas donde debes sobrevivir a infinidad de duelos contra todo tipo de rivales en el Salvaje Oeste. ¿Serás capaz de construir un mazo a la altura de los más buscados? ¡Descúbrelo tú mismo!",
+  "game.paragraph2":"Duelite es un roguelite de cartas en el Salvaje Oeste donde cada partida es diferente. Protagonizado por Jhonny Coust y sus amigos, unos niños muy imaginativos que ven en cualquier cosa que se encuentran, unos feroces enemigos a los que derrotar con sus colecciones de cartas.",
+  "game.paragraph3":"En cada partida, tendrás la oportunidad de enfrentarte en duelo a terribles rivales, y conforme vayas avanzando y superando cada duelo, serás capaz de elegir nuevas cartas que añadir a tu mazo. Cada vez que derrotes a un jefe, podrás pasar por la tienda, donde podrás comprar objetos pasivos que te ayuden en la búsqueda de los más buscados del Salvaje Oeste. ¿Serás capaz de capturar a todos los bandidos?",
+  "game.info":"Cada run es única donde puedes encontrar:\n+8 personajes jugables\n+100 enemigos\n+30 jefes\n+6 jefes finales\n+6 rutas\n+200 cartas jugables\n+250 cartas pasivas\nTienda",
+  "game.available":"Disponible en:",
+  "game.contact":"Contacto:"
 }

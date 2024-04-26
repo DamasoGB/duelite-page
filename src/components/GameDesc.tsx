@@ -2,7 +2,7 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
-import dueliteLogo from '../assets/placeholder.webp'
+import dueliteLogo from '../assets/dueliteLogo.webp'
 import dueliteIcon from '../../public/jhony_coust.webp'
 
 export function GameDesc({language}){
@@ -19,6 +19,8 @@ export function GameDesc({language}){
                     {t('game.paragraph1')}
                     <br /><br/>
                     {t('game.paragraph2')}
+                    <br/>
+                    {t('game.paragraph3')}
                 </p>
             </div>
         </>
