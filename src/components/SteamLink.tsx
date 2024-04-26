@@ -11,7 +11,7 @@ export function SteamLink({ language }) {
     <>
       <h2 className="wishlistText">{t("game.add")}:</h2>
       <div className="wishlistContainer">
-        <a href="https://store.steampowered.com">
+        <a href="https://store.steampowered.com/app/2961480/Duelite/">
           <img
             alt="Wishlist on Steam"
             src={wishlistImg}
