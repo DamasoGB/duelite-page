@@ -54,3 +54,8 @@
         margin-right: 0;
     }
 }
+@media screen and (min-width: 1600px) {
+    .gameLogo{
+        max-width: 40%;
+    }
+}

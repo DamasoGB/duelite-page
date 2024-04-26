@@ -26,7 +26,7 @@ export function ImageSlider() {
   return (
     <section
       aria-label="Image Slider"
-      style={{ width: "100%", height: "100%", position: "relative" }}
+      className="imageSlider"
     >
       <a href="#after-image-slider-controls" className="skip-link">
         Skip Image Slider Controls
@@ -36,7 +36,7 @@ export function ImageSlider() {
         style={{
           width: "100%",
           height: "100%",
-          display: "flex",
+          display: "relative",
           overflow: "hidden",
         }}
       >
@@ -47,7 +47,7 @@ export function ImageSlider() {
             alt={alt}
             aria-hidden={imageIndex !== index}
             className="img-slider-img"
-            style={{ translate: `${-100 * imageIndex}%` }}
+            style={{ display: index === imageIndex ? "block" : "none" }}
           />
         ))}
       </div>
@@ -70,7 +70,7 @@ export function ImageSlider() {
       <div
         style={{
           position: "absolute",
-          bottom: ".5rem",
+          bottom: "-1.5rem",
           left: "50%",
           translate: "-50%",
           display: "flex",

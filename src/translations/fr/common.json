@@ -6,6 +6,8 @@
   "game.add": "Ajouter le jeu à la liste de souhaits",
   "game.paragraph1":"Le roguelite des cartes de duel du Far West. Duelite est un jeu de cartes attrayant dans lequel vous devez survivre à d'innombrables duels contre tous types de rivaux dans le Far West. Serez-vous capable de construire un deck à la hauteur des plus recherchés ? Découvrez-le vous-même !",
   "game.paragraph2":"Duelite est un roguelite de cartes se déroulant dans le Far West où chaque jeu est différent. Avec Jhonny Coust et ses amis, des enfants très imaginatifs qui voient dans tout ce qu'ils rencontrent, des ennemis féroces à vaincre avec leurs collections de cartes.",
-  "game.paragraph3":"Dans chaque jeu, vous aurez l'opportunité d'affronter de terribles rivaux, et au fur et à mesure que vous avancerez et surmonterez chaque duel, vous pourrez choisir de nouvelles cartes à ajouter à votre deck. Chaque fois que vous battez un boss, vous pouvez passer au magasin, où vous pourrez acheter des objets passifs pour vous aider dans votre recherche des plus recherchés du Far West. Serez-vous capable de capturer tous les bandits ?"
-
+  "game.paragraph3":"Dans chaque jeu, vous aurez l'opportunité d'affronter de terribles rivaux, et au fur et à mesure que vous avancerez et surmonterez chaque duel, vous pourrez choisir de nouvelles cartes à ajouter à votre deck. Chaque fois que vous battez un boss, vous pouvez passer au magasin, où vous pourrez acheter des objets passifs pour vous aider dans votre recherche des plus recherchés du Far West. Serez-vous capable de capturer tous les bandits ?",
+  "game.info":"Chaque manche est unique et vous pouvez y trouver:\n+8 personnages jouables\n+100 ennemis\n+30 boss\n+6 boss finaux\n+6 routes\n+200 cartes jouables\n+250 cartes passives\nBoutique",
+  "game.available":"Disponible en:",
+  "game.contact":"Contact:"
 }
