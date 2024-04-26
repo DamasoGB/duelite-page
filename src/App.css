@@ -53,6 +53,10 @@
         max-width: 40%;
         margin-right: 0;
     }
+    .description{
+        width: 80%;
+    
+    }
 }
 @media screen and (min-width: 1600px) {
     .gameLogo{
