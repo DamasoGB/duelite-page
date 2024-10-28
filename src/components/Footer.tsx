@@ -13,10 +13,10 @@ export function Footer(){
 
 return(
     <footer>
-        <a href="https://twitter.com/duelitegame" className='footerlink'><img src={Steam} className='footerimg'/></a>
-        <a href="https://discord.gg/c46PUqhxqp" className='footerlink'><img src={Discord} className='footerimg'/></a>
-        <a href="https://twitter.com/duelitegame" className='footerlink'><img src={Twitter} className='footerimg'/></a>
-        <a href="mailto:betakingstudios@gmail.com" className='footerlink'><img src={Mail} className='footerimg'/></a>
+        <a href="https://store.steampowered.com/curator/45097743" className='footerlink' alt='Steam'><img src={Steam} className='footerimg'/></a>
+        <a href="https://discord.gg/c46PUqhxqp" className='footerlink' alt='Discord'><img src={Discord} className='footerimg'/></a>
+        <a href="https://twitter.com/duelitegame" className='footerlink' alt='Twitter'><img src={Twitter} className='footerimg'/></a>
+        <a href="mailto:betakingstudios@gmail.com" className='footerlink' alt='Mail'><img src={Mail} className='footerimg'/></a>
     </footer>
 )
 }
