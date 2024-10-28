@@ -2,26 +2,20 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
-import dueliteLogo from '../assets/dueliteLogo.webp'
-import dueliteIcon from '../../public/jhony_coust.webp'
+import betakingLogo from '../assets/betakingweb/paginawweb-BLANCO.png'
 
-export function GameDesc({language}){
+export function GameDesc(){
     const { t } = useTranslation("common");
 
     return(
         <>
+            <img alt="Logo" src={betakingLogo} className="gameLogo"/>
             <div className="gameContainer">
-                <img alt="Duelite Logo" src={dueliteLogo} className="gameLogo"/>
-            </div>
-            <div className="descContainer">
-                <img alt="Icon Duelite" src={dueliteIcon} className="gameIcon"/>
-                <p className="description">
+                <span className="description">
                     {t('game.paragraph1')}
-                    <br /><br/>
                     {t('game.paragraph2')}
-                    <br/>
                     {t('game.paragraph3')}
-                </p>
+                </span>
             </div>
         </>
     )

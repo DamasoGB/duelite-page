@@ -1,67 +1,54 @@
+body{
+    background-image: url('src/assets/betakingweb/pueblo2-desenfocao.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 .gameContainer{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    margin:auto;
+    margin-top: 1rem;
 }
 .gameLogo{
-    max-width: 60%;
-    height: auto;
-    
-}
-
-.descContainer{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-.gameIcon{
-    max-width: 100%;
-    margin-right: 3rem;
-    height: 30%;
+    width: 30%;
+    margin:auto;
+    margin-top: 5rem;
 }
 .description{
-    width: 60%;
-
+    text-align: center;
 }
 
-.wishlistContainer{
+.steamlink{
     display: flex;
     justify-content: center;
-}
-.wishlistText{
-    text-align: center;
-    display: block;
-    margin: 0 1rem;
-}
-.wishlist{
-    width: 15.625rem;
-    border-radius: 7px;
-    margin-bottom: 2rem;
-}
-.gameInfo{
-    text-align: center;
-    display: block;
-    margin: 0 1rem;
-    margin-bottom: 3rem;
-    white-space: pre-wrap;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 @media screen and (max-width: 768px) {
     .gameLogo{
-        max-width: 80%;
+        width: 50%;
+    }
+    .gameContainer{
+        width: 80%;
+    }
+    
+    .description{
+        width: 100%;
     }
 
-    .gameIcon{
-        max-width: 40%;
-        margin-right: 0;
-    }
-    .description{
-        width: 80%;
-    
+    .steamlink{
+        width: 95%;
+        margin: auto;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
     }
 }
 @media screen and (min-width: 1600px) {
-    .gameLogo{
-        max-width: 40%;
-    }
+    
 }

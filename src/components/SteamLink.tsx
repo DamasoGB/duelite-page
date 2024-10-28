@@ -1,24 +1,11 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 
-import { useTranslation } from "react-i18next";
-import wishlistImg from '../assets/wishlistSteam.webp'
-
-export function SteamLink({ language }) {
-  const { t } = useTranslation("common");
-
+export function SteamLink() {
   return (
-    <>
-      <h2 className="wishlistText">{t("game.add")}:</h2>
-      <div className="wishlistContainer">
-        <a href="https://store.steampowered.com/app/2961480/Duelite/">
-          <img
-            alt="Wishlist on Steam"
-            src={wishlistImg}
-            className="wishlist"
-          />
-        </a>
-      </div>
-    </>
+    <div className="steamlink">
+      <iframe src="https://store.steampowered.com/widget/2961480/" frameborder="0" width="646" height="190"></iframe>
+    </div>
+    
   );
 }

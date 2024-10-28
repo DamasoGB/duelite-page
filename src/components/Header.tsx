@@ -3,35 +3,13 @@
 
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import logo from '../assets/betakingStudiosLogo.webp';
-import enFlag from '../assets/Flag_of_the_United_Kingdom.svg';
-import esFlag from '../assets/Flag_of_Spain.svg';
-import frFlag from '../assets/Flag_of_France.svg';
+import logo from '../assets/betakingweb/paginawweb-2.png';
 import "../styles/Header.css";
 
-export function Header({ language, setLanguage }) {
+export function Header() {
   const [showMenu, setShowMenu] = useState<boolean>(true);
 
   const { i18n } = useTranslation("common");
-
-  useEffect(() => {
-    const handleResize = () => {
-      setShowMenu(window.innerWidth > 768);
-    };
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
-
-  const handleLanguageChange = (newLanguage: string) => {
-    setLanguage(newLanguage);
-    i18n.changeLanguage(newLanguage);
-  };
 
   return (
     <>
@@ -41,41 +19,6 @@ export function Header({ language, setLanguage }) {
           className="logo"
           src={logo}
         />
-        <div>
-          <div
-            className={`menu-toggle ${showMenu ? "open" : "close"}`}
-            onClick={toggleMenu}
-          >
-            <span />
-            <span />
-            <span />
-          </div>
-          <nav className={`menu ${showMenu ? "show" : ""}`}>
-            <ul>
-              <li onClick={() => handleLanguageChange("es")}>
-                <img
-                  alt="Español"
-                  src={esFlag}
-                  className={language === 'es' ? "flagIconChoosed" : "flagIcon" }
-                />
-              </li>
-              <li onClick={() => handleLanguageChange("en")}>
-                <img
-                  alt="English"
-                  src={enFlag}
-                  className={language === 'en' ? "flagIconChoosed" : "flagIcon" }
-                />
-              </li>
-              <li onClick={() => handleLanguageChange("fr")}>
-                <img
-                  alt="Français"
-                  src={frFlag}
-                  className={language === 'fr' ? "flagIconChoosed" : "flagIcon" }
-                />
-              </li>
-            </ul>
-          </nav>
-        </div>
       </header>
     </>
   );
