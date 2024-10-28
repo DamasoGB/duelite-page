@@ -3,7 +3,7 @@
 
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import logo from '../assets/betakingweb/paginawweb-2.png';
+import logo from '../assets/betakingweb/paginawweb-2.webp';
 import "../styles/Header.css";
 
 export function Header() {

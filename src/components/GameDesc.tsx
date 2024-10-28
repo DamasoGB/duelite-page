@@ -2,7 +2,7 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
-import betakingLogo from '../assets/betakingweb/paginawweb-BLANCO.png'
+import betakingLogo from '../assets/betakingweb/paginawweb-BLANCO.webp'
 
 export function GameDesc(){
     const { t } = useTranslation("common");
@@ -14,8 +14,8 @@ export function GameDesc(){
                 <span className="description">
                     {t('game.paragraph1')}
                     {t('game.paragraph2')}
-                    {t('game.paragraph3')}
                 </span>
+                    {t('game.paragraph3')}
             </div>
         </>
     )
