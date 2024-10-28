@@ -1,5 +1,5 @@
 body{
-    background-image: url('src/assets/betakingweb/pueblo2-desenfocao.png');
+    background-image: url('./assets/betakingweb/pueblo2-desenfocao.png');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
