@@ -26,7 +26,7 @@ body{
 .steamlink{
     display: flex;
     justify-content: center;
-    margin-top: 10rem;
+    margin-top: 8rem;
     margin-bottom: 10rem;
 }
 
@@ -45,8 +45,8 @@ body{
     .steamlink{
         width: 95%;
         margin: auto;
-        margin-top: 10rem;
-        margin-bottom: 10rem;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
     }
 }
 @media screen and (min-width: 1600px) {
