@@ -16,7 +16,7 @@ return(
         <a href="https://twitter.com/duelitegame" className='footerlink'><img src={Steam} className='footerimg'/></a>
         <a href="https://discord.gg/c46PUqhxqp" className='footerlink'><img src={Discord} className='footerimg'/></a>
         <a href="https://twitter.com/duelitegame" className='footerlink'><img src={Twitter} className='footerimg'/></a>
-        <a href="https://twitter.com/duelitegame" className='footerlink'><img src={Mail} className='footerimg'/></a>
+        <a href="mailto:betakingstudios@gmail.com" className='footerlink'><img src={Mail} className='footerimg'/></a>
     </footer>
 )
 }
