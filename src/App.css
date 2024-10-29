@@ -26,8 +26,8 @@ body{
 .steamlink{
     display: flex;
     justify-content: center;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
 }
 
 @media screen and (max-width: 768px) {
