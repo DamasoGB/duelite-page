@@ -12,6 +12,7 @@ body{
     width: 40%;
     margin:auto;
     margin-top: 1rem;
+    margin-bottom: 6rem;
 }
 .gameLogo{
     display: flex;
@@ -26,10 +27,30 @@ body{
 .steamlink{
     display: flex;
     justify-content: center;
-    margin-top: 8rem;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
 }
 
+.steam-links-grid {
+    display: grid;
+    gap: 16px; 
+    padding: 16px;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    justify-content: center;
+}
+
+.steam-links-grid-two {
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 1340px) {
+    .steam-links-grid {
+        grid-template-columns: 1fr;
+    }
+    .steam-links-grid-two {
+        display: block;
+    }
+}
 @media screen and (max-width: 768px) {
     .gameLogo{
         width: 50%;

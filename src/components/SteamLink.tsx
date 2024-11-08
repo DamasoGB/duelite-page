@@ -1,10 +1,13 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
-
-export function SteamLink() {
+interface SteamLinkProps {
+  title: string;
+  src: string;
+}
+export function SteamLink({ title, src }: SteamLinkProps) {
   return (
     <div className="steamlink">
-      <iframe title="Duelite" src="https://store.steampowered.com/widget/2961480/" frameborder="0" width="646" height="190"></iframe>
+      <iframe title={title} src={src} frameborder="0" width="646" height="190"></iframe>
     </div>
     
   );
