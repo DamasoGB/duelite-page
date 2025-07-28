@@ -105,7 +105,7 @@ const DrAndriu = () => {
         <h2></h2>
         <div style={styles.contactButtons}>
           <a href="mailto:drandriu@gmail.com" style={styles.contactButton}>✉️ Email Me</a>
-          <a href="https://linkedin.com/in/drandriu" target="_blank" style={styles.contactButton}>💼 LinkedIn</a>
+          <a href="https://linkedin.com/in/andresjimenezjimenez" target="_blank" style={styles.contactButton}>💼 LinkedIn</a>
         </div>
       </footer>
 
