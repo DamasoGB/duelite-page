@@ -69,34 +69,46 @@ const DrAndriu = () => {
       {/* SKILLS */}
       <section>
         <h2 style={styles.sectionTitle}>🛠️ Skills & Tools</h2>
-        <ul style={styles.list}>
-          <li>Unity (C#)</li>
-          <li>2D/3D Gameplay Programming</li>
-          <li>Game Design & Level Design</li>
-          <li>Steam Publishing / Itch.io</li>
-          <li>Git, Trello, Photoshop</li>
-        </ul>
+        <div style={styles.skillsContainer}>
+          {['Unity (C#)', '2D/3D Gameplay Programming', 'Game Design & Level Design', 'Steam Publishing / Itch.io', 'Git', 'Trello', 'Photoshop'].map((skill, i) => (
+            <span key={i} style={styles.skillBadge}>{skill}</span>
+          ))}
+        </div>
       </section>
 
       {/* TIMELINE */}
       <section>
         <h2 style={styles.sectionTitle}>📅 Career Timeline</h2>
-        <ul style={styles.timeline}>
-          <li><strong>2022:</strong> Started development of Duelite</li>
-          <li><strong>2023:</strong> Published Duelite on Steam</li>
-          <li><strong>2024:</strong> Developed and launched Rabbit Trail</li>
-          <li><strong>2025:</strong> Seeking first role in game industry</li>
-        </ul>
+        <div style={styles.timelineContainer}>
+          <div style={styles.timelineItem}>
+            <div style={styles.timelineDot}></div>
+            <div><strong>2022:</strong> Started development of Duelite</div>
+          </div>
+          <div style={styles.timelineItem}>
+            <div style={styles.timelineDot}></div>
+            <div><strong>2023:</strong> Published Duelite on Steam</div>
+          </div>
+          <div style={styles.timelineItem}>
+            <div style={styles.timelineDot}></div>
+            <div><strong>2024:</strong> Developed and launched Rabbit Trail</div>
+          </div>
+          <div style={styles.timelineItem}>
+            <div style={styles.timelineDot}></div>
+            <div><strong>2025:</strong> Developing my third game</div>
+          </div>
+        </div>
       </section>
 
-      {/* CONTACT */}
+
+            {/* CONTACT */}
       <footer style={styles.footer}>
-        <h2>📬 Contact</h2>
-        <ul style={styles.list}>
-          <li>Email: drandriu@gmail.com</li>
-          <li><a href="https://linkedin.com/in/drandriu" target="_blank">LinkedIn</a></li>
-        </ul>
+        <h2></h2>
+        <div style={styles.contactButtons}>
+          <a href="mailto:drandriu@gmail.com" style={styles.contactButton}>✉️ Email Me</a>
+          <a href="https://linkedin.com/in/drandriu" target="_blank" style={styles.contactButton}>💼 LinkedIn</a>
+        </div>
       </footer>
+
     </div>
   );
 };
@@ -177,6 +189,62 @@ const styles: { [key: string]: React.CSSProperties } = {
   marginTop: '0.5rem',
   transition: 'color 0.2s ease',
 },
+  skillsContainer: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: '0.5rem',
+    justifyContent: 'center',
+    marginTop: '1rem',
+  },
+  skillBadge: {
+    backgroundColor: '#1e1e1e',
+    border: '1px solid #00ffd9',
+    color: '#00ffd9',
+    padding: '0.3rem 0.7rem',
+    borderRadius: '20px',
+    fontSize: '0.9rem',
+    transition: 'background 0.2s ease',
+  },
+
+  timelineContainer: {
+    position: 'relative',
+    margin: '2rem auto',
+    paddingLeft: '1.5rem',
+    maxWidth: '600px',
+    borderLeft: '2px solid #00ffd9',
+  },
+  timelineItem: {
+    position: 'relative',
+    marginBottom: '1.5rem',
+    paddingLeft: '1rem',
+    color: '#ccc',
+  },
+  timelineDot: {
+    position: 'absolute',
+    left: '-10px',
+    top: '4px',
+    width: '12px',
+    height: '12px',
+    backgroundColor: '#00ffd9',
+    borderRadius: '50%',
+    boxShadow: '0 0 8px #00ffd9',
+  },
+    contactButtons: {
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '1rem',
+    marginTop: '1rem',
+  },
+  contactButton: {
+    backgroundColor: '#00ffd9',
+    color: '#0e0e0e',
+    fontWeight: 'bold',
+    padding: '0.5rem 1rem',
+    borderRadius: '25px',
+    textDecoration: 'none',
+    transition: 'transform 0.2s ease, background 0.3s ease',
+  },
+
 };
 
 export default DrAndriu;
