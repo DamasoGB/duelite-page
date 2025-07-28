@@ -3,10 +3,10 @@ import React from 'react';
 import duelite from '../assets/duelite.webp'
 import rt from '../assets/rabbittrail.webp'
 
-import octoStrike from '../assets/duelite.webp'
-import sharkTwist from '../assets/rabbittrail.webp'
-import zumerios from '../assets/duelite.webp'
-import goldHeist from '../assets/rabbittrail.webp'
+import octoStrike from '../assets/octo.webp'
+import sharkTwist from '../assets/shark.webp'
+import zumerios from '../assets/zum.webp'
+import goldHeist from '../assets/goldheist.webp'
 
 
 
@@ -17,7 +17,7 @@ const DrAndriu = () => {
       {/* HEADER */}
       <header style={styles.header}>
         <h1 style={styles.name}>Andrés Jiménez</h1>
-        <h2 style={styles.role}>Game Developer</h2>
+        <h2 style={styles.role}>Game Developer & Game Designer</h2>
         <p style={styles.description}>
           Indie developer with 3+ years of experience. Published 2 games on Steam and built several game jam titles across various genres. Passionate about game mechanics, systems design, and fun.
         </p>
@@ -31,17 +31,17 @@ const DrAndriu = () => {
             <img src={duelite} alt="Duelite" style={styles.image} />
             <h3>Duelite</h3>
             <p>
-              Card-based roguelite published on Steam. Solo developed. Includes deck-building, procedural maps, and strategic battles.
+              Card-based roguelite published on Steam. Includes deck-building, procedural maps, and strategic battles.
             </p>
-            <a href="https://store.steampowered.com/app/2961480/Duelite" target="_blank">Steam Page →</a>
+            <a href="https://store.steampowered.com/app/2961480/Duelite" target="_blank"  style={styles.link}>Steam Page →</a>
           </div>
           <div style={styles.card}>
             <img src={rt} alt="Rabbit Trail" style={styles.image} />
             <h3>Rabbit Trail</h3>
             <p>
-              Puzzle platformer published on Steam. Focused on level design, mechanics and exploration. Built with Unity.
+              Puzzle platformer published on Steam. Focused on level design, mechanics and narrative story.
             </p>
-            <a href="https://store.steampowered.com/app/3371710/RabbitTrail" target="_blank">Steam Page →</a>
+            <a href="https://store.steampowered.com/app/3371710/RabbitTrail" target="_blank"  style={styles.link}>Steam Page →</a>
           </div>
         </div>
       </section>
@@ -51,15 +51,16 @@ const DrAndriu = () => {
         <h2 style={styles.sectionTitle}>🚀 Game Jam Projects</h2>
         <div style={styles.grid}>
           {[
-            { name: 'Octo Strike', img: '/assets/octo-strike.png', desc: '16-bit arcade jam. Programmed movement, AI, and mechanics.' },
-            { name: 'Shark Twist', img: '/assets/shark-twist.png', desc: 'FPS + survival jam. Enemy spawner, stamina, mechanic swap.' },
-            { name: 'Zumerios', img: '/assets/zumerios.png', desc: 'Tactics-style project. Created terrain and character systems.' },
-            { name: 'Gold Heist', img: '/assets/gold-heist.png', desc: 'Top-down shooter. Item pickup, enemy logic and weapons.' },
+            { name: 'Octo Strike', img: octoStrike, desc: '16-bit arcade jam. Programmed movement, AI, and mechanics.', itch: 'https://drandriu.itch.io/octo-strike' },
+            { name: 'Shark Twist', img: sharkTwist, desc: 'FPS + survival jam. Enemy spawner, stamina, mechanic swap.', itch: 'https://antonio-serrano-esquerdo.itch.io/shark-twist'},
+            { name: 'Zumerios', img: zumerios, desc: 'Colorful juice shop game. Mix fruits to match colors, manage chaos and earn the King’s visit.', itch: 'https://drandriu.itch.io/zumerios'},
+            { name: 'Gold Heist', img: goldHeist, desc: 'Be the villain, sneak around to collect car parts and steal gold while managing stamina and avoiding detection.', itch: 'https://drandriu.itch.io/gold-heist' },
           ].map((jam, i) => (
             <div key={i} style={styles.card}>
               <img src={jam.img} alt={jam.name} style={styles.image} />
               <h4>{jam.name}</h4>
               <p>{jam.desc}</p>
+              <a href={jam.itch} target="_blank" style={styles.link}>Itch.io Page →</a>
             </div>
           ))}
         </div>
@@ -92,8 +93,7 @@ const DrAndriu = () => {
       <footer style={styles.footer}>
         <h2>📬 Contact</h2>
         <ul style={styles.list}>
-          <li>Email: andres.dev@gmail.com</li>
-          <li><a href="https://github.com/drandriu" target="_blank">GitHub</a></li>
+          <li>Email: drandriu@gmail.com</li>
           <li><a href="https://linkedin.com/in/drandriu" target="_blank">LinkedIn</a></li>
         </ul>
       </footer>
@@ -169,6 +169,14 @@ const styles: { [key: string]: React.CSSProperties } = {
     marginTop: '4rem',
     textAlign: 'center',
   },
+  link: {
+  color: '#00ffd9',
+  textDecoration: 'none',
+  fontWeight: 'bold',
+  display: 'inline-block',
+  marginTop: '0.5rem',
+  transition: 'color 0.2s ease',
+},
 };
 
 export default DrAndriu;
