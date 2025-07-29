@@ -12,10 +12,10 @@ export function GameDesc(){
             <img alt="Logo" src={betakingLogo} className="gameLogo"/>
             <div className="gameContainer">
                 <span className="description">
-                    {t('game.paragraph1')}
-                    {t('game.paragraph2')}
+                    {t('Betaking Studios is a small independent video game studio based in Murcia, Spain. Driven by passion and creativity, we craft the games we’d love to play. ')}
+                    {t('Without any budget but with lots of dedication.')}
                 </span>
-                    {t('game.paragraph3')}
+                    {t('Welcome to Betaking Studios!')}
             </div>
         </>
     )
