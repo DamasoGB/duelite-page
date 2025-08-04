@@ -7,6 +7,7 @@ import octoStrike from '../assets/octo.webp'
 import sharkTwist from '../assets/shark.webp'
 import zumerios from '../assets/zum.webp'
 import goldHeist from '../assets/goldheist.webp'
+import snowend from '../assets/snowend.webp'
 
 
 
@@ -51,10 +52,11 @@ const DrAndriu = () => {
         <h2 style={styles.sectionTitle}>🚀 Game Jam Projects</h2>
         <div style={styles.grid}>
           {[
-            { name: 'Octo Strike', img: octoStrike, desc: '16-bit arcade jam. Programmed movement, AI, and mechanics.', itch: 'https://drandriu.itch.io/octo-strike' },
+            { name: 'Snowend', img: snowend, desc: 'Loop Platformer for the GMTK 2025. Every time Snow falls, the cycle begins again… but not everything resets.', itch: 'https://drandriu.itch.io/snowend'},
             { name: 'Shark Twist', img: sharkTwist, desc: 'FPS + survival jam. Enemy spawner, stamina, mechanic swap.', itch: 'https://antonio-serrano-esquerdo.itch.io/shark-twist'},
             { name: 'Zumerios', img: zumerios, desc: 'Colorful juice shop game. Mix fruits to match colors, manage chaos and earn the King’s visit.', itch: 'https://drandriu.itch.io/zumerios'},
             { name: 'Gold Heist', img: goldHeist, desc: 'Be the villain, sneak around to collect car parts and steal gold while managing stamina and avoiding detection.', itch: 'https://drandriu.itch.io/gold-heist' },
+            { name: 'Octo Strike', img: octoStrike, desc: '16-bit arcade jam. Programmed movement, AI, and mechanics.', itch: 'https://drandriu.itch.io/octo-strike' },
           ].map((jam, i) => (
             <div key={i} style={styles.card}>
               <img src={jam.img} alt={jam.name} style={styles.image} />
