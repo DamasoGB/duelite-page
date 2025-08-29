@@ -6,7 +6,14 @@ import { steamLinksData } from "./data/steamLinksData";
 import "./App.css";
 
 export function App() {
-  const gridClassName = steamLinksData.length === 2 ? "steam-links-grid-two" : steamLinksData.length === 1 ? "steam-links-one" : "steam-links-grid";
+const gridClassName =
+  steamLinksData.length === 1
+    ? "steam-links-one"
+    : steamLinksData.length === 2
+    ? "steam-links-grid-two"
+    : steamLinksData.length === 3
+    ? "steam-links-grid-three"
+    : "steam-links-grid";
 
   return (
     <>
