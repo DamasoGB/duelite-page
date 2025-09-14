@@ -2,6 +2,7 @@ import React from 'react';
 
 import duelite from '../assets/duelite.webp'
 import rt from '../assets/rabbittrail.webp'
+import cad from '../assets/cad.webp'
 
 import octoStrike from '../assets/octo.webp'
 import sharkTwist from '../assets/shark.webp'
@@ -29,13 +30,15 @@ const DrAndriu = () => {
         <h2 style={styles.sectionTitle}>🎮 Published Games</h2>
         <div style={styles.grid}>
           <div style={styles.card}>
-            <img src={duelite} alt="Duelite" style={styles.image} />
-            <h3>Duelite</h3>
+            <img src={cad} alt="Catch and Defense" style={styles.image} />
+            <h3>Catch & Defense</h3>
             <p>
-              Card-based roguelite published on Steam. Includes deck-building, procedural maps, and strategic battles.
+              Tower defense roguelite developing for Steam. Includes deck-building, procedural maps, and capture enemies.
             </p>
-            <a href="https://store.steampowered.com/app/2961480/Duelite" target="_blank"  style={styles.link}>Steam Page →</a>
+            <a href="https://store.steampowered.com/app/3930410/Catch__Defense/" target="_blank"  style={styles.link}>Steam Page →</a>
           </div>
+
+
           <div style={styles.card}>
             <img src={rt} alt="Rabbit Trail" style={styles.image} />
             <h3>Rabbit Trail</h3>
@@ -44,6 +47,16 @@ const DrAndriu = () => {
             </p>
             <a href="https://store.steampowered.com/app/3371710/RabbitTrail" target="_blank"  style={styles.link}>Steam Page →</a>
           </div>
+
+          <div style={styles.card}>
+            <img src={duelite} alt="Duelite" style={styles.image} />
+            <h3>Duelite</h3>
+            <p>
+              Card-based roguelite published on Steam. Includes deck-building, procedural maps, and strategic battles.
+            </p>
+            <a href="https://store.steampowered.com/app/2961480/Duelite" target="_blank"  style={styles.link}>Steam Page →</a>
+          </div>
+          
         </div>
       </section>
 
@@ -96,7 +109,7 @@ const DrAndriu = () => {
           </div>
           <div style={styles.timelineItem}>
             <div style={styles.timelineDot}></div>
-            <div><strong>2025:</strong> Developing my third game</div>
+            <div><strong>2025:</strong> Developing Catch and Defense</div>
           </div>
         </div>
       </section>
