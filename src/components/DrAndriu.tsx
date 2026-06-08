@@ -9,6 +9,7 @@ import sharkTwist from '../assets/shark.webp'
 import zumerios from '../assets/zum.webp'
 import goldHeist from '../assets/goldheist.webp'
 import snowend from '../assets/snowend.webp'
+import tacticsPrototype from '../assets/tactics-prototype.png'
 
 
 
@@ -21,7 +22,7 @@ const DrAndriu = () => {
         <h1 style={styles.name}>Andrés Jiménez</h1>
         <h2 style={styles.role}>Game Developer & Game Designer</h2>
         <p style={styles.description}>
-          Indie developer with 3+ years of experience. Published 2 games on Steam and built several game jam titles across various genres. Passionate about game mechanics, systems design, and fun.
+          Indie developer with 3+ years of experience. Published 3 games on Steam and built several game jam titles across various genres. Passionate about game mechanics, systems design, and fun.
         </p>
       </header>
 
@@ -57,6 +58,29 @@ const DrAndriu = () => {
             <a href="https://store.steampowered.com/app/2961480/Duelite" target="_blank"  style={styles.link}>Steam Page →</a>
           </div>
           
+        </div>
+      </section>
+
+      {/* OPEN SOURCE PROTOTYPES */}
+      <section>
+        <h2 style={styles.sectionTitle}>Open Source Prototypes</h2>
+        <div style={styles.grid}>
+          <div style={styles.card}>
+            <img src={tacticsPrototype} alt="Tactics Prototype" style={styles.image} />
+            <h3>Tactics Prototype</h3>
+            <p>
+              Technical test focused on tactical combat systems, gameplay architecture, and clean code.
+              Public repository where you can check how I work.
+            </p>
+            <a
+              href="https://github.com/drandriu/tactics-prototype"
+              target="_blank"
+              rel="noreferrer"
+              style={styles.link}
+            >
+              GitHub Repository
+            </a>
+          </div>
         </div>
       </section>
 
