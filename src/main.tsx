@@ -8,6 +8,7 @@ import common_es from "./translations/es/common.json";
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DrAndriu from "./components/DrAndriu.tsx";
+import { AndresJimenezCV } from "./components/AndresJimenezCV.tsx";
 
 i18next.init({
   interpolation: { escapeValue: false },
@@ -22,19 +23,15 @@ i18next.init({
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 
 root.render(
-  <I18nextProvider i18n={i18next}>
-    <App />
-  </I18nextProvider>
-);
-
-
-ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/drandriu" element={<DrAndriu />} />
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>,
+    <I18nextProvider i18n={i18next}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/drandriu" element={<DrAndriu />} />
+          <Route path="/andres-jimenez" element={<AndresJimenezCV />} />
+        </Routes>
+      </BrowserRouter>
+    </I18nextProvider>
+  </React.StrictMode>
 );
