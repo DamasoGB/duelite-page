@@ -12,9 +12,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm ci && npm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_DUELITE_GAME }}
-          channelId: live
-          projectId: duelite-game
+      - name: Deploy to Firebase Hosting
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_DUELITE_GAME }}
+        run: |
+          set -o pipefail
+          printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > "$RUNNER_TEMP/firebase-service-account.json"
+          export GOOGLE_APPLICATION_CREDENTIALS="$RUNNER_TEMP/firebase-service-account.json"
+
+          set +e
+          npx firebase-tools@15.22.3 deploy --only hosting --project duelite-game --json 2>&1 | tee "$RUNNER_TEMP/firebase-deploy.log"
+          status=${PIPESTATUS[0]}
+          set -e
+
+          if [ "$status" -ne 0 ]; then
+            if grep -q "is the current active version" "$RUNNER_TEMP/firebase-deploy.log"; then
+              echo "Firebase Hosting version is already active; treating deploy as successful."
+              exit 0
+            fi
+
+            exit "$status"
+          fi
